@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link href="RezaLoader.css" rel="stylesheet" type="text/css" />
+        
+    </head>
+    <body style="text-align: center;">
+        <h4>RezaLoader</h4>
+        <button>Start</button>
+
+
+        <script src="jquery.min.js"></script>
+        <script src="RezaLoader.js"></script>
+        
+        <script>
+            $("button").click(function(){
+                $.Toast.showToast({ title: "Please Wait <br>  Loading Data", duration: 0, icon: "loader", });
+                setTimeout(() => {
+                    $.Toast.hideToast();
+                }, 2000);
+            })
+        </script>
+
+
+
+
+    </body>
+</html>
+

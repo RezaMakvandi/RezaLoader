@@ -1,0 +1,54 @@
+/**
+RezaLoader
+version: 1.0.0
+by: Reza Mavandi
+**/
+.RezaLoaderPulse {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+    .RezaLoaderPulse div {
+        position: absolute;
+        border: 4px solid #fff;
+        opacity: 1;
+        border-radius: 50%;
+        animation: RezaLoaderPulse 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+
+        .RezaLoaderPulse div:nth-child(2) {
+            animation-delay: -0.5s;
+        }
+
+@keyframes RezaLoaderPulse {
+    0% {
+        top: 28px;
+        left: 28px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: -1px;
+        left: -1px;
+        width: 58px;
+        height: 58px;
+        opacity: 0;
+    }
+}
+
+.toast-wrap {
+    background:none !important; 
+}
+
+.loaderTitle {
+    color: #424242 !important;
+    text-shadow: 3px 3px 3px #d6d6d6;
+}
+
+.toast-content > div {
+    background-color: #525151 !important;
+}
